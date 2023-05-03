@@ -1,2 +1,12 @@
-.App {
+.App > div {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  justify-content: center;
+  background-color: #160b77;
+  width: 500px;
+  height: 250px;
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid #23c978;
 }
