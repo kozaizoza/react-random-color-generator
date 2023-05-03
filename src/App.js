@@ -1,18 +1,16 @@
 import './App.css';
+import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 export default function App() {
-  const App = () => {
-    const [hex, setHex] = useState('#ffffff');
-    const generatedHex = () => {
-      const randomColor = '#' + Math.floor(Math.random());
-      setHex(randomColor);
-    };
-    return (
-      <div className="App">
-        <p>{hex}</p>
-        <button onClick={generatedHex}>Generate</button>
-      </div>
-    );
+  const [hex, setHex] = useState(randomColor);
+  const generatedHex = () => {
+    setHex(randomColor);
   };
+  return (
+    <div className="App">
+      <div style={{ background: hex }}>Generated Color: {hex}</div>
+      <button onClick={generatedHex}>Generate</button>
+    </div>
+  );
 }
