@@ -12,9 +12,8 @@
 }
 
 .App > button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -23,5 +22,5 @@
   position: fixed;
   top: 70%;
   left: 45%;
-  border: 2px solid #e91628; /* red */
+  border: 2px solid #e91628;
 }
